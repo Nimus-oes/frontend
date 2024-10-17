@@ -1,5 +1,9 @@
 # Survey Form
 
+![A Survey Form Screenshot](surveyform.png)
+
+A survey form bulit with HTML and CSS
+
 ## Key Features Implemented
 
 - A form containing text, email, number, radio buttons, checkboxes, and dropdown input fields
