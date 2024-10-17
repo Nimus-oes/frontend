@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Survey Form Template with HTML/CSS" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <title>MyCompany Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>MyCompany Survey Form</h1>
+      <p>
+        <i>Thank you for taking the time to help us improve the platform</i>
+      </p>
+    </header>
+    <main>
+      <form action="">
+        <div class="form-items">
+          <label for="name" class="form-q">Name </label
+          ><input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-items">
+          <label for="email" class="form-q">Email </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-items">
+          <label for="age" class="form-q"
+            >Age <span class="clue">(optional)</span> </label
+          ><input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="Enter your age"
+          />
+        </div>
+        <div class="form-items">
+          <label for="job" class="form-q"
+            >Which option best describes your current role?</label
+          >
+          <select name="job" id="job" required>
+            <option value="" selected disabled>Select the current role</option>
+            <option value="student">Student</option>
+            <option value="ft-job">Full time job</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-items">
+          <p class="form-q">Would you recommend our service to a friend?</p>
+          <label for="definitely" class="check-items"
+            ><input type="radio" name="recommend" id="definitely" checked />
+            Definitely</label
+          >
+          <label for="maybe" class="check-items"
+            ><input type="radio" name="recommend" id="maybe" /> Maybe</label
+          >
+          <label for="notsure" class="check-items"
+            ><input type="radio" name="recommend" id="notsure" /> Not
+            Sure</label
+          >
+        </div>
+        <div class="form-items">
+          <label for="recommend" class="form-q"
+            >What is your favorite feature of our service?</label
+          >
+          <select name="recommend" id="recommend" required>
+            <option value="" selected disabled>Select an option</option>
+            <option value="feature1">Feature 1</option>
+            <option value="feature2">Feature 2</option>
+            <option value="feature3">Feature 3</option>
+            <option value="feature4">Feature 4</option>
+          </select>
+        </div>
+        <div class="form-items">
+          <p class="form-q">
+            What would you like to see improved?<span class="clue"
+              >(Check all that apply)</span
+            >
+          </p>
+          <label for="service1" class="check-items"
+            ><input type="checkbox" name="improve" id="service1" /> Service
+            1</label
+          >
+          <label for="service2" class="check-items"
+            ><input type="checkbox" name="improve" id="service2" /> Service
+            2</label
+          >
+          <label for="service3" class="check-items"
+            ><input type="checkbox" name="improve" id="service3" /> Service
+            3</label
+          >
+          <label for="service4" class="check-items"
+            ><input type="checkbox" name="improve" id="service4" /> Service
+            4</label
+          >
+          <label for="service5" class="check-items"
+            ><input type="checkbox" name="improve" id="service5" /> Service
+            5</label
+          >
+        </div>
+        <div class="form-items">
+          <label for="suggestion" class="form-q"
+            >Any comments or suggestions?</label
+          >
+          <textarea
+            name="feedback"
+            id="suggestion"
+            name="suggestion"
+            placeholder="Enter your comment here"
+            rows="5"
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>©Nimus-oes</p>
+    </footer>
+  </body>
+</html>
