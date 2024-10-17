@@ -54,3 +54,7 @@ This issue was resolved by creating an invisible element before the body’s con
 
 1. Adding subtle animations to buttons and input elements
 2. Adding ARIA attributes for better accessibility
+
+## Acknowledgments
+
+This project is based on a certification project from <a href="https://survey-form.freecodecamp.rocks/">freeCodeCamp</a>
