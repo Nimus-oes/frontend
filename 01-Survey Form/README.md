@@ -49,3 +49,8 @@ The background image may shift at the end of the page when srolloing, making an 
 **Solution:**
 
 This issue was resolved by creating an invisible element before the body’s content with `body::before` and applying a background image and styles to it.
+
+## Future Improvements
+
+1. Adding subtle animations to buttons and input elements
+2. Adding ARIA attributes for better accessibility
