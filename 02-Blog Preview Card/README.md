@@ -29,7 +29,7 @@ When implementing responsive designs, using `max-width` instead of `width` ensur
 
 For mobile screens, `%` is often a more flexible unit for width, adapting to various screen sizes. However, on larger screens, it can result in over-scaling. Switching to `em/rem` for desktop layouts ensures more consistent scaling and better control over element sizes.
 
-### 3. Optimizing Images for Small Elements
+### 3. Optimizing images for small elements
 
 Resizing large images with CSS to fit small elements (like profile pictures) is not always ideal. It’s better to use pre-edited images to maintain image quality and reduce file size, thereby improving load times. CSS resizing doesn’t reduce the file size and can negatively impact performance.
 
