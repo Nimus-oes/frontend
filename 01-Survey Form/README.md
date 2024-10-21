@@ -1,10 +1,11 @@
 # Survey Form
 
-<img src="surveyform.png" width="50%">
+<img src="surveyform.png">
 
 <p></p>
 A survey form bulit with HTML and CSS
 
+<p></p>
 <br>
 
 ## Key Features Implemented
