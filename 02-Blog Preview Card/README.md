@@ -13,7 +13,7 @@ A blog preview card bulit with HTML and CSS
 - A responsive layout for both mobile and desktop environments
 - Vertical alignment of different-shaped elements (e.g., text and images) using Flexbox.
 
-<p></p>
+<br>
 
 ## Findings and Lessons
 
@@ -29,9 +29,13 @@ For mobile screens, `%` is often a more flexible unit for width, adapting to var
 
 Resizing large images with CSS to fit small elements (like profile pictures) is not always ideal. It’s better to use pre-edited images to maintain image quality and reduce file size, thereby improving load times. CSS resizing doesn’t reduce the file size and can negatively impact performance.
 
+<br>
+
 ## Future Improvements
 
 1. Adding interactive elements, such as buttons for sharing the blog or reading more.
+
+<br>
 
 ## Acknowledgments
 

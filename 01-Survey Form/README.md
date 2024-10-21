@@ -1,7 +1,8 @@
 # Survey Form
 
-![A Survey Form Screenshot](surveyform.png)
+<img src="surveyform.png" width="50%">
 
+<p></p>
 A survey form bulit with HTML and CSS
 
 ## Key Features Implemented
@@ -9,6 +10,8 @@ A survey form bulit with HTML and CSS
 - A form containing text, email, number, radio buttons, checkboxes, and dropdown input fields
 - A responsive layout for both mobile and desktop environments
 - An achored background image using the pseudo element `::before`
+
+<br>
 
 ## Challenges and Lessons
 
@@ -50,10 +53,14 @@ The background image may shift at the end of the page when srolloing, making an 
 
 This issue was resolved by creating an invisible element before the body’s content with `body::before` and applying a background image and styles to it.
 
+<br>
+
 ## Future Improvements
 
 1. Adding subtle animations to buttons and input elements
 2. Adding ARIA attributes for better accessibility
+
+<br>
 
 ## Acknowledgments
 
