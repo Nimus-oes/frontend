@@ -1,5 +1,6 @@
 # Blog Preview Card
 
+<br>
 <p align="center">
 <img src="previewcard.png" width="50%">
 </p>
@@ -37,6 +38,7 @@ Resizing large images with CSS to fit small elements (like profile pictures) is 
 ## Future Improvements
 
 1. Adding interactive elements, such as buttons for sharing the blog or reading more.
+2. Using CSS variables for repeated style values
 
 <br>
 
