@@ -5,6 +5,7 @@
 <p></p>
 A blog preview card bulit with HTML and CSS
 
+<p></p>
 <br>
 
 ## Key Features Implemented
