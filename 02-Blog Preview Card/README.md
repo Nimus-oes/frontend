@@ -1,10 +1,9 @@
 # Blog Preview Card
 
-![A Screenshot of Blog Preview Card](previewcard.png)
-
-A blog preview card bulit with HTML and CSS
+<img src="previewcard.png" width="50%">
 
 <p></p>
+A blog preview card bulit with HTML and CSS
 
 ## Key Features Implemented
 
@@ -13,6 +12,8 @@ A blog preview card bulit with HTML and CSS
 - Hover effect on the title, with a color change using the pseudo-class `:hover`
 - A responsive layout for both mobile and desktop environments
 - Vertical alignment of different-shaped elements (e.g., text and images) using Flexbox.
+
+<p></p>
 
 ## Findings and Lessons
 
