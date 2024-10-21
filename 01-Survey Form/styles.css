@@ -50,6 +50,10 @@ footer {
   margin: 1rem auto;
 }
 
+footer a {
+  color: white;
+}
+
 form {
   text-align: left;
   width: 100%;
