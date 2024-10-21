@@ -1,9 +1,8 @@
 # Blog Preview Card
 
-<img src="previewcard.png" width="50%">
-
-<p></p>
-A blog preview card bulit with HTML and CSS
+<img src="previewcard.png" width="50%" style="display: block; margin: 0 auto;">
+<br>
+<p style="text-align: center">A blog preview card bulit with HTML and CSS</p>
 
 <p></p>
 <br>
