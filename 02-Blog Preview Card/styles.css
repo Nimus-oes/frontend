@@ -4,6 +4,7 @@ html {
 
 body {
   background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", "sans-serif";
 }
 
 .tag {
@@ -17,7 +18,7 @@ body {
 }
 
 #card {
-  width: 25%;
+  width: 70%;
   margin: 5rem auto;
   border: 1px solid;
   border-radius: 10px;
@@ -27,7 +28,6 @@ body {
 }
 
 #preview-image {
-  display: block;
   width: 100%;
   border-radius: 10px;
   margin-bottom: 1.5rem;
@@ -40,6 +40,11 @@ body {
 #title {
   font-size: 1.5rem;
   font-weight: bolder;
+}
+
+#title:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
 }
 
 #description {
@@ -65,4 +70,14 @@ body {
 
 footer {
   text-align: center;
+}
+
+footer a {
+  color: black;
+}
+
+@media only screen and (min-width: 600px) {
+  #card {
+    max-width: 370px;
+  }
 }
