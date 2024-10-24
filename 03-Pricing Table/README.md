@@ -19,7 +19,7 @@
 
 ## Challenges and Lessons
 
-### 1. Confilect between `border-collapse: collapse` and `border-radius` in a table
+### 1. Confilect between `border-collapse: collapse` and `border-radius`
 
 When using `border-collapse: collapse` on a table, you can't directly apply `border-radius` to create rounded corners. One solution is to set `border-spacing: 0` and apply borders to individual cells where needed, without collapsing the borders.
 
@@ -36,9 +36,13 @@ table {
 }
 ```
 
+---
+
 ### 2. `border` and `border-radius` apply to cells, not rows or columns
 
 Borders and rounded corners can only be applied to individual table cells (`<td>` or `<th>` elements), not entire rows or columns.
+
+---
 
 ### 3. Aligning table content
 
@@ -46,11 +50,15 @@ Borders and rounded corners can only be applied to individual table cells (`<td>
 
 **Image alignment:** Images can be aligned horizontally and vertically within a table cell using a flexbox
 
+---
+
 ### 4. `table-layout: fixed` for controlling table width
 
 By default, the width of table cells are adjusted based on its content size. For precise control over column widths, you need to set `table-layout: fixed` to the table element.
 
 However, even with this setting, the table and its cells shrink to a minimum width to accomodate the longest unbreakable content.
+
+---
 
 ### 5. Column widths in tables with headers
 
