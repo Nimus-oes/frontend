@@ -19,7 +19,7 @@
 
 ## Challenges and Lessons
 
-### 1. Confilect between `border-collapse: collapse` and `border-radius`
+### 1. Conflict between `border-collapse: collapse` and `border-radius`
 
 When using `border-collapse: collapse` on a table, you can't directly apply `border-radius` to create rounded corners. One solution is to set `border-spacing: 0` and apply borders to individual cells where needed, without collapsing the borders.
 
