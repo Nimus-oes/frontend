@@ -2,7 +2,7 @@
 
 <br>
 <p align="center">
-<img src="#" width="50%">
+<img src="assets/pricing-table.png">
 </p>
 <p align="center">A pricing table built with HTML and CSS</p>
 
@@ -28,3 +28,7 @@
 ## Acknowledgments
 
 This project is based on a production page of NordVPN:
+
+<p>
+<img src="assets/nordvpn-prod.png" width="70%">
+</p>
