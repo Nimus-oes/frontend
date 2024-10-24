@@ -26,6 +26,8 @@ A survey form built with HTML and CSS
 
 The issue can be resolved by by applying `box-sizing: border-box` and explicitly defining the width and height for all input fields.
 
+---
+
 ### 2. The vertical alignment of radio button/checkbox items
 
 It is hard to vertically align radio button/checkbox icons and its text content when the size of the icons are manually increased. The `vertical-align` property doesn't provide a precise alignment.
@@ -33,6 +35,8 @@ It is hard to vertically align radio button/checkbox icons and its text content 
 **Solution:**
 
 By using `display: flex` on the label, the radio button/checkbox icon and text content become two flex items. They can be easily aligned with `align-items: center`.
+
+---
 
 ### 3. Relationship between labels and inputs
 
@@ -42,6 +46,8 @@ Should a form label nest the input fields or should they be separated?
 - Usecase 2: `<label></label><input />`
 
 Separating labels and inputs while linking with `for` attributes allows for more flexible layouts. However, when both elements need to appear inline (such as radio button/checkbox and its text content), nesting the input element inside the label is more effective and keeps the layout simpler.
+
+---
 
 ### 4. The background shifting at the end of the page
 
