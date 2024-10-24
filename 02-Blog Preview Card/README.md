@@ -4,7 +4,7 @@
 <p align="center">
 <img src="previewcard.png" width="50%">
 </p>
-<p align="center">A blog preview card bulit with HTML and CSS</p>
+<p align="center">A blog preview card built with HTML and CSS</p>
 
 <p></p>
 <br>

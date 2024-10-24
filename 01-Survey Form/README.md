@@ -3,7 +3,7 @@
 <img src="surveyform.png">
 
 <p></p>
-A survey form bulit with HTML and CSS
+A survey form built with HTML and CSS
 
 <p></p>
 <br>
