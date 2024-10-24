@@ -36,13 +36,13 @@ table {
 }
 ```
 
----
+<br>
 
 ### 2. `border` and `border-radius` apply to cells, not rows or columns
 
 Borders and rounded corners can only be applied to individual table cells (`<td>` or `<th>` elements), not entire rows or columns.
 
----
+<br>
 
 ### 3. Aligning table content
 
@@ -50,15 +50,19 @@ Borders and rounded corners can only be applied to individual table cells (`<td>
 
 **Image alignment:** Images can be aligned horizontally and vertically within a table cell using a flexbox
 
----
+<br>
 
 ### 4. `table-layout: fixed` for controlling table width
 
-By default, the width of table cells are adjusted based on its content size. For precise control over column widths, you need to set `table-layout: fixed` to the table element.
+By default, the width of table cells are adjusted based on its content size. Defining widths to individual columns often resulted in inconsistent and unexpected layout.
 
-However, even with this setting, the table and its cells shrink to a minimum width to accomodate the longest unbreakable content.
+**Solution:**
 
----
+For precise control over column widths, you need to set `table-layout: fixed` to the table element first.
+
+However, even with this setting, the table and its cells can only shrink to a minimum width to accomodate the longest unbreakable content.
+
+<br>
 
 ### 5. Column widths in tables with headers
 
