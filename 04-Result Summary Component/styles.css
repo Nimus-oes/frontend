@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 0;
 }
 
 footer a {
@@ -8,17 +10,70 @@ footer a {
 }
 
 body {
-  margin: 0;
   height: 100vh;
-  overflow: hidden;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
-.flex-column-center,
+button {
+  padding: 1rem;
+}
+
+.sector {
+  padding: 0.8rem;
+}
+
+.sector:not(.sector:last-of-type) {
+  margin-bottom: 1rem;
+}
+
 .container-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-space-btw {
+  justify-content: space-between;
+}
+
+.flex-space-even {
+  justify-content: space-evenly;
+}
+
+.sm-font {
+  font-size: 0.9rem;
+}
+
+.md-font {
+  font-size: 1rem;
+}
+
+.lg-font {
+  font-size: 1.2rem;
+}
+
+.xl-font {
+  font-size: 1.5rem;
+}
+
+.xxl-font {
+  font-size: 2.8rem;
 }
 
 #main-container {
@@ -34,6 +89,22 @@ body {
 #summary-container {
   width: 100%;
   height: 55%;
+  padding: 0 1.8rem;
+}
+
+#score-circle {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+}
+
+#score-grade {
+  margin-bottom: 0.3rem;
+}
+
+#score-desc {
+  padding: 0 3rem;
+  text-align: center;
 }
 
 @media (min-width: 717px) {
@@ -50,5 +121,31 @@ body {
   #summary-container {
     width: 50%;
     height: 100%;
+  }
+
+  #score-circle {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .sector {
+    padding: 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .sector:not(.sector:last-of-type) {
+    margin-bottom: 0.7rem;
+  }
+
+  button {
+    padding: 0.6rem;
+  }
+
+  button.lg-font {
+    font-size: 1rem;
+  }
+
+  footer {
+    margin-top: 3rem;
   }
 }
