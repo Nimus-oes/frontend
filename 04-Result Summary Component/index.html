@@ -13,66 +13,73 @@
     </style>
     <title>Result Summary Component - Frontend Mentor</title>
   </head>
-  <body class="flex-column flex-center">
+  <body class="flex-column">
     <main class="container-flex" id="main-container">
-      <section
-        class="flex-column flex-center flex-space-even"
-        id="score-container"
-      >
-        <h1 class="lg-font">Your Result</h1>
-        <div class="sm-font flex-column flex-center" id="score-circle">
-          <span class="xxl-font">76</span> of 100
+      <section class="flex-column-space-even" id="score-container">
+        <h1 class="lg-font color-lavendar weight-500">Your Result</h1>
+        <div class="sm-font flex-column color-lavendar" id="score-circle">
+          <span class="xxl-font color-white weight-800">76</span> of 100
         </div>
-        <div class="sm-font" id="score-desc">
-          <div class="xl-font" id="score-grade">Great</div>
+        <div class="sm-font color-paleblue" id="score-desc">
+          <div class="xl-font color-white weight-500" id="score-grade">
+            Great
+          </div>
           You scored higher than 65% of the people who have taken these tests.
         </div>
       </section>
-      <section class="flex-column flex-space-even" id="summary-container">
-        <h2 class="lg-font">Summary</h2>
-        <section class="md-font">
-          <div class="flex-row flex-center flex-space-btw sector">
-            <div class="flex-row flex-center">
+      <section class="flex-column-space-even" id="summary-container">
+        <h2 class="lg-font color-grayblue weight-700">Summary</h2>
+        <section class="md-font weight-500 flex-column" id="sector-container">
+          <div class="flex-row-space-btw sector" id="reaction-container">
+            <div class="flex-row" id="reaction">
               <img
                 src="assets/icon-reaction.svg"
                 alt="A lighting-shaped icon representing a Reaction"
                 width="100%"
               />Reaction
             </div>
-            <div><span>80</span> / 100</div>
+            <div class="color-gray">
+              <span class="weight-700 color-grayblue">80</span> / 100
+            </div>
           </div>
-          <div class="flex-row flex-center flex-space-btw sector">
-            <div class="flex-row flex-center">
+          <div class="flex-row-space-btw sector" id="memory-container">
+            <div class="flex-row" id="memory">
               <img
                 src="assets/icon-memory.svg"
                 alt="A brain-shaped icon representing Memory"
                 width="100%"
               />Memory
             </div>
-            <div><span>92</span> / 100</div>
+            <div class="color-gray">
+              <span class="weight-700 color-grayblue">92</span> / 100
+            </div>
           </div>
-          <div class="flex-row flex-center flex-space-btw sector">
-            <div class="flex-row flex-center">
+          <div class="flex-row-space-btw sector" id="verbal-container">
+            <div class="flex-row" id="verbal">
               <img
                 src="assets/icon-verbal.svg"
                 alt="A speech bubble-shaped icon representing Verbal"
                 width="100%"
               />Verbal
             </div>
-            <div><span>61</span> / 100</div>
+            <div class="color-gray">
+              <span class="weight-700 color-grayblue">61</span> / 100
+            </div>
           </div>
-          <div class="flex-row flex-center flex-space-btw sector">
-            <div class="flex-row flex-center">
+          <div class="flex-row-space-btw sector" id="visual-container">
+            <div class="flex-row" id="visual">
               <img
                 src="assets/icon-visual.svg"
                 alt="An eye-shaped icon representing Visual"
                 width="100%"
               />Visual
             </div>
-            <div><span>72</span> / 100</div>
+            <div class="color-gray">
+              <span class="weight-700 color-grayblue">72</span> / 100
+            </div>
           </div>
         </section>
-        <button type="button" class="lg-font">Continue</button>
+        <button type="button" class="md-font color-paleblue">Continue</button>
       </section>
     </main>
     <footer><a href="https://github.com/Nimus-oes">©Nimus-oes</a></footer>
