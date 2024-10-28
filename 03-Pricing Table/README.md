@@ -17,7 +17,7 @@
 
 <br>
 
-## Challenges and Lessons
+## Challenges and Learnings
 
 ### 1. Conflict between `border-collapse: collapse` and `border-radius`
 

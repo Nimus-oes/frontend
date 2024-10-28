@@ -16,7 +16,7 @@ A survey form built with HTML and CSS
 
 <br>
 
-## Challenges and Lessons
+## Challenges and Learnings
 
 ### 1. The width of `select` element
 

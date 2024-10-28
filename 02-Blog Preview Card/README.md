@@ -19,7 +19,7 @@
 
 <br>
 
-## Findings and Lessons
+## Challenges and Learnings
 
 ### 1. `max-width` for responsive layout
 
