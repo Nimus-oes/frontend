@@ -57,6 +57,10 @@ button {
   background-color: var(--dark-gray-blue);
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 img {
   margin-right: 0.8rem;
 }
@@ -64,6 +68,10 @@ img {
 .sector {
   padding: 0.8rem;
   border-radius: 10px;
+}
+
+.sector:hover {
+  cursor: pointer;
 }
 
 .flex-column,
@@ -225,6 +233,22 @@ img {
 
 #visual-container {
   background-color: var(--cobalt-blue-lighter);
+}
+
+#reaction-container:hover {
+  background-color: var(--light-red-light);
+}
+
+#memory-container:hover {
+  background-color: var(--orange-yellow-light);
+}
+
+#verbal-container:hover {
+  background-color: var(--green-teal-light);
+}
+
+#visual-container:hover {
+  background-color: var(--cobalt-blue-light);
 }
 
 @media (min-width: 717px) {
