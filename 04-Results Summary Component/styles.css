@@ -173,6 +173,7 @@ body {
 #category-container {
   gap: 1rem;
   align-items: normal;
+  list-style-type: none;
 }
 
 #reaction-container::before {
@@ -235,6 +236,10 @@ img {
 
 #visual {
   color: var(--cobalt-blue);
+}
+
+.slash {
+  margin: 0 0.4rem;
 }
 
 button {
