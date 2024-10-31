@@ -5,7 +5,7 @@
 <img src="assets/project-mobile.png" width="40%">
 </p>
 <p align="center">
-<img src="assets/project-desktop.png" width="70%">
+<img src="assets/project-desktop.png" width="80%">
 </p>
 <p align="center">A result summary component built with HTML and CSS</p>
 
@@ -43,9 +43,9 @@
 
 Both flexbox and grid could achieve the layout for this project, but each has specific use cases.
 
-Grid: Ideal for two-dimensional layouts (rows and columns), equal-sized areas, and larger page structures
+**Grid**: Ideal for two-dimensional layouts (rows and columns), equal-sized areas, and larger page structures
 
-Flexbox: Best for one-dimensional layouts (row or column), dynamic content alignment, and layouts where content size drives positioning
+**Flexbox**: Best for one-dimensional layouts (row or column), dynamic content alignment, and layouts where content size drives positioning
 
 In this project, I chose flexbox because it works well for one-dimensional layouts, shifting from a column on mobile to a row on desktop. Using flexbox with utility classes allowed nested containers without adding much CSS complexity.
 
@@ -77,7 +77,7 @@ Using `gap` makes codes cleaner and prevents margin collapse issues:
 
 If you decrease the opacity of the background of an element with `opacity` property, the opacity of the child elements will be decreased as well. The simplest way to adjust the background opacity without affecting child elements is by using color values with an alpha channel (e.g., RGBA and HSLA). However, this approach requires creating numerous variables for each color and opacity combination when multiple color variations are needed.
 
-The problem (too many color variables):
+The problem (too many color variables and lengthy codes):
 
 ```
   :root {
@@ -164,11 +164,11 @@ The solution with overlay:
 
 ### 4. Choosing semantic HTML tags: `<section>`, `<article>`, or `<ul>` for category items
 
-For related category items (Reaction, Memory, Verbal, Visual), I used `<ul>` to reflect the items' nature as related yet unordered content. Each tag has it unique purpose:
+For related category items (Reaction, Memory, Verbal, Visual), I used `<ul>` to reflect the items' nature as related yet unordered content. Each tag has its unique purpose:
 
-`<section>`: An element to group related content with a heading
-`<article>`: An element to represent standalone content for independent distribution
-`<ul>`: An element to list unordered, non-numerically ordered items
+- `<section>`: An element to group related content with a heading
+- `<article>`: An element to represent standalone content for independent distribution
+- `<ul>`: An element to list unordered, non-numerically ordered items
 
 As the category items are dependent on their container’s context and do not have a heading, `<ul>` best fits here.
 
@@ -199,3 +199,9 @@ As the category items are dependent on their container’s context and do not ha
 - [Organizing your CSS (MDN)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing) - Tips on organizing CSS code, covering methodologies like OOCSS, BEM, and the use of pre/post-processors.
 
 - [5 Tips To Make Google Fonts Faster (Request Metrics)](https://requestmetrics.com/web-performance/5-tips-to-make-google-fonts-faster/) - Tips for optimizing Google Fonts to improve loading speed and performance.
+
+<br>
+
+## Acknowledgments
+
+This project is inspired by [the challenge from Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV).
