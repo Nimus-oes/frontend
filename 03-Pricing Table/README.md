@@ -2,7 +2,10 @@
 
 <br>
 <p align="center">
-<img src="assets/pricing-table.png">
+<img src="assets/project-mobile.png" width="40%">
+</p>
+<p align="center">
+<img src="assets/project-desktop.png">
 </p>
 <p align="center">A pricing table built with HTML and CSS</p>
 
