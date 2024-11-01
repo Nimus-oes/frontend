@@ -24,7 +24,7 @@ A survey form built with HTML and CSS
 
 **Solution:**
 
-The issue can be resolved by by applying `box-sizing: border-box` and explicitly defining the width and height for all input fields.
+The issue can be resolved by applying `box-sizing: border-box` and explicitly defining the width and height for all input fields.
 
 <br>
 
@@ -51,7 +51,7 @@ Separating labels and inputs while linking with `for` attributes allows for more
 
 ### 4. The background shifting at the end of the page
 
-The background image may shift at the end of the page when srolloing, making an unwanted white space on top or bottom of the page, even with the following CSS properties:
+The background image may shift at the end of the page when scrolling, making an unwanted white space on top or bottom of the page, even with the following CSS properties:
 
 - `background-size: cover`
 - `background-attachment: fixed`
