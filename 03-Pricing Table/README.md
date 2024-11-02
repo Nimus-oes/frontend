@@ -15,7 +15,7 @@
 ## Key Features Implemented
 
 - A table design with zebra stripes and rounded corners using the semantic HTML `<table>` element
-- A responsive layout for both mobile and desktop environments (~600px, 768px, 992px, 1200px)
+- A responsive layout for mobile, tablet, and desktop environments (~600px, 768px, 992px, 1200px)
 - Horizontal scrolling for smaller screens using `overflow-x` property
 
 <br>
