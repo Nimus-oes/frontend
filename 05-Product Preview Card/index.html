@@ -13,8 +13,28 @@
   <body>
     <div class="wrapper">
       <main>
-        <section id="image-container">Image</section>
-        <section id="detail-container">PERFUME</section>
+        <section id="image-container">
+          <picture>
+            <source
+              srcset="assets/product-desktop.jpg"
+              media="(min-width: 62rem)"
+            />
+            <img src="assets/product-mobile.jpg" alt="" />
+          </picture>
+        </section>
+        <section id="detail-container">
+          <h2>PERFUME</h2>
+          <h2>Gabrielle Essence Eau De Parfum</h2>
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div>$149.99</div>
+          <div>$169.99</div>
+          <div id="button">
+            <img src="assets/icon-cart.svg" alt="" />Add to Cart
+          </div>
+        </section>
       </main>
     </div>
     <footer><a href="https://github.com/Nimus-oes">©Nimus-oes</a></footer>
