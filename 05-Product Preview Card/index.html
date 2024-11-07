@@ -16,47 +16,63 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Product Preview Card - Frontend Mentor</title>
   </head>
-  <body>
-    <div class="wrapper">
-      <main>
-        <section id="image-container">
-          <picture>
-            <source
-              srcset="assets/product-desktop.jpg"
-              media="(min-width: 62rem)"
-            />
-            <img
-              src="assets/product-mobile.jpg"
-              id="product-image"
-              alt="A perfume bottle image"
-            />
-          </picture>
-        </section>
-        <section id="detail-container">
-          <h2 class="montserrat weight-500 font-sm letter-spacing">PERFUME</h2>
-          <h2 class="fraunces weight-700 font-lg">
-            Gabrielle Essence Eau De Parfum
-          </h2>
-          <p class="montserrat weight-500 font-md">
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-          <div class="fraunces weight-700 font-lg">
-            $149.99
-            <sup class="montserrat weight-500 font-sm">$169.99</sup>
-          </div>
-          <div class="montserrat weight-700 font-md" id="button">
-            <img
-              src="assets/icon-cart.svg"
-              id="cart-icon"
-              alt=""
-              aria-hidden="true"
-            />
-            Add to Cart
-          </div>
-        </section>
-      </main>
-    </div>
-    <footer><a href="https://github.com/Nimus-oes">©Nimus-oes</a></footer>
+  <body class="flex f-column f-center">
+    <main>
+      <section class="flex" id="image-container">
+        <picture class="flex">
+          <source
+            srcset="assets/product-desktop.jpg"
+            media="(min-width: 62rem)"
+          />
+          <img
+            src="assets/product-mobile.jpg"
+            id="product-image"
+            alt="A perfume bottle image"
+          />
+        </picture>
+      </section>
+      <section class="flex f-column f-space-btw" id="detail-container">
+        <h2
+          class="montserrat weight-500 font-sm letter-spacing color-aurometal"
+        >
+          PERFUME
+        </h2>
+        <h2 class="fraunces weight-700 font-lg line-h-32 color-gunmetal">
+          Gabrielle Essence Eau De Parfum
+        </h2>
+        <p class="montserrat weight-500 font-md line-h-23 color-aurometal">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div
+          class="fraunces weight-700 font-lg line-h-32 color-aquamarine"
+          id="discount-price"
+        >
+          <span class="visually-hidden">Discounted Price: </span>$149.99
+          <sup
+            class="montserrat weight-500 font-sm line-h-23 color-aurometal"
+            id="original-price"
+            ><span class="visually-hidden">Original Price: </span
+            ><s>$169.99</s></sup
+          >
+        </div>
+        <button
+          class="montserrat weight-700 font-md color-white flex f-row f-center"
+          id="button"
+          type="button"
+        >
+          <img
+            src="assets/icon-cart.svg"
+            id="cart-icon"
+            alt=""
+            aria-hidden="true"
+          />
+          Add to Cart
+        </button>
+      </section>
+    </main>
+    <footer>
+      <a href="https://github.com/Nimus-oes" target="_blank">©Nimus-oes</a>
+    </footer>
   </body>
 </html>
