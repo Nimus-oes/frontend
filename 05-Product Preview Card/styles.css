@@ -6,13 +6,56 @@
 }
 
 :root {
+  --5px: 0.3125rem;
+  --11px: 0.6875rem;
+  --14px: 0.875rem;
+  --12px: 0.75rem;
+  --13px: 0.8125rem;
+  --14px: 0.875rem;
   --16px: 1rem;
+  --32px: 2rem;
   --240px: 15rem;
   --343px: 21.4375rem;
   --371px: 23.1875rem;
   --450px: 28.125rem;
   --600px: 37.5rem;
   --611px: 38.1875rem;
+}
+
+.montserrat {
+  font-family: Montserrat, sans-serif;
+}
+
+.fraunces {
+  font-family: Fraunces, sans-serif;
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.font-xs {
+  font-size: var(--12px);
+}
+
+.font-sm {
+  font-size: var(--13px);
+}
+
+.font-md {
+  font-size: var(--14px);
+}
+
+.font-lg {
+  font-size: var(--32px);
+}
+
+.letter-spacing {
+  letter-spacing: var(--5px);
 }
 
 body {
@@ -25,8 +68,9 @@ body {
 }
 
 main {
-  width: min(var(--343px), 100vw);
-  height: var(--611px);
+  width: var(--343px);
+  width: min(var(--343px), 95vw);
+  min-height: var(--611px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,14 +85,38 @@ main {
 
 #detail-container {
   width: 100%;
-  height: var(--371px);
+  min-height: var(--371px);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
 }
 
 picture {
   width: 100%;
   display: flex;
+}
+
+#product-image {
+  width: 100%;
+}
+
+#price {
+  display: flex;
+  flex-direction: row;
+}
+
+#button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 15.5px 0;
+  gap: var(--11px);
+}
+
+#cart-icon {
+  width: var(--14px);
 }
 
 footer {
@@ -69,6 +137,7 @@ footer {
     align-items: center;
     width: var(--600px);
     height: var(--450px);
+    min-height: unset;
   }
 
   #image-container {
@@ -79,6 +148,7 @@ footer {
   #detail-container {
     width: 50%;
     height: 100%;
+    padding: 32px;
   }
 
   footer {
