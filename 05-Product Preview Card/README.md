@@ -26,17 +26,19 @@
 
 1. Designed the basic layout for mobile and desktop screens using flexbox
 
-<img src="assets/process-001.png"  width="70%">
+<img src="assets/step-01.png"  width="70%">
 
 2. Structured the content with semantic HTML tags
 
+<img src="assets/step-02.png"  width="70%">
+
 3. Added typography and spacing
 
-<img src="assets/process-002.png"  width="70%">
+<img src="assets/step-03.png"  width="70%">
 
 4. Added visual details and finishing touches
 
-<img src="assets/process-003.png"  width="70%">
+<img src="assets/step-04.png"  width="70%">
 
 <br>
 
