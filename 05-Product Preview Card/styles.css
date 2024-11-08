@@ -1,18 +1,17 @@
-* {
+/* Reset */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 :root {
-  --cream: #f2eae2;
-  --white: #ffffff;
-  --aurometal-saurus: #6c7289;
-  --gunmetal: #1c232b;
-  --deep-aquamarine: #3d8168;
-  --deep-aquamarine-hover: #1a4032;
-
   --5px: 0.3125rem;
+  --8px: 0.5rem;
+  --10px: 0.625rem;
   --11px: 0.6875rem;
   --12px: 0.75rem;
   --13px: 0.8125rem;
@@ -30,71 +29,96 @@
 }
 
 /* Utility Class */
-.montserrat {
+.ff-body {
   font-family: Montserrat, sans-serif;
 }
 
-.fraunces {
+.ff-highlight {
   font-family: Fraunces, sans-serif;
 }
 
-.weight-500 {
+.fw-500 {
   font-weight: 500;
 }
 
-.weight-700 {
+.fw-700 {
   font-weight: 700;
 }
 
-.font-xs {
+.fs-xs {
   font-size: var(--12px);
 }
 
-.font-sm {
+.fs-sm {
   font-size: var(--13px);
 }
 
-.font-md {
+.fs-md {
   font-size: var(--14px);
 }
 
-.font-lg {
+.fs-lg {
   font-size: var(--32px);
 }
 
-.letter-spacing {
+.lt-spacing {
   letter-spacing: var(--5px);
 }
 
-.line-h-23 {
+.lh-sm {
   line-height: var(--23px);
 }
 
-.line-h-32 {
+.lh-md {
   line-height: var(--32px);
 }
 
-.color-white {
-  color: var(--white);
+.white {
+  color: #ffffff;
 }
 
-.color-gunmetal {
-  color: var(--gunmetal);
+.gunmetal {
+  color: #1c232b;
 }
 
-.color-aurometal {
-  color: var(--aurometal-saurus);
+.aurometal {
+  color: #6c7289;
 }
 
-.color-aquamarine {
-  color: var(--deep-aquamarine);
+.aquamarine {
+  color: #3d8168;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-cream {
+  background-color: #f2eae2;
+}
+
+.bg-aquamarine {
+  background-color: #3d8168;
+}
+
+.hover-bg-aquamarine:hover {
+  background-color: #1a4032;
+  transition: background-color 0.3s ease;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-center {
+  place-content: center;
 }
 
 .flex {
   display: flex;
 }
 
-.f-column {
+.f-col {
   flex-direction: column;
 }
 
@@ -111,15 +135,23 @@
   justify-content: space-between;
 }
 
-.visually-hidden {
+.sr-only {
   display: none;
 }
 
+.round-sm {
+  border-radius: var(--8px);
+}
+
 /* General Style*/
+img,
+source {
+  display: block;
+}
+
 body {
   width: 100vw;
   min-height: 100vh;
-  background-color: var(--cream);
 }
 
 footer {
@@ -135,39 +167,29 @@ footer a {
 }
 
 /* Main responsive container */
-main {
-  width: var(--343px);
+#product-card {
   width: min(var(--343px), 95vw);
-  min-height: var(--611px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: var(--611px);
   margin-top: 56px;
 }
 
 /* Product image container and image element */
 #image-container {
-  width: 100%;
-  height: var(--240px);
-}
-
-picture {
-  width: 100%;
+  max-height: var(--240px);
+  display: grid;
 }
 
 #product-image {
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  height: 100%;
+  border-radius: var(--10px) var(--10px) 0 0;
 }
 
 /* Product detail container and text element */
 #detail-container {
-  width: 100%;
   min-height: var(--371px);
   padding: 24px;
-  background-color: var(--white);
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 var(--10px) var(--10px);
 }
 
 #original-price {
@@ -176,16 +198,9 @@ picture {
 
 #button {
   width: 100%;
-  padding: 15.5px 0;
+  padding: 16px 0;
   gap: var(--11px);
-  background-color: var(--deep-aquamarine);
-  border-radius: 8px;
-  border: none;
   cursor: pointer;
-}
-
-#button:hover {
-  background-color: var(--deep-aquamarine-hover);
 }
 
 #cart-icon {
@@ -194,28 +209,23 @@ picture {
 
 /* Styles for desktop screens */
 @media (min-width: 62rem) {
-  main {
-    display: flex;
-    flex-direction: row;
+  #product-card {
     width: var(--600px);
     height: var(--450px);
-    min-height: unset;
+    grid-template-columns: 1fr 1fr;
   }
 
   #image-container {
-    width: 50%;
-    height: 100%;
+    max-height: unset;
   }
 
   #product-image {
-    border-radius: 10px 0 0 10px;
+    border-radius: var(--10px) 0 0 var(--10px);
   }
 
   #detail-container {
-    width: 50%;
-    height: 100%;
     padding: 32px;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 var(--10px) var(--10px) 0;
   }
 
   footer {

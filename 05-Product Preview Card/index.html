@@ -16,60 +16,60 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Product Preview Card - Frontend Mentor</title>
   </head>
-  <body class="flex f-column f-center">
+  <body class="grid grid-center bg-cream">
     <main>
-      <section class="flex" id="image-container">
-        <picture class="flex">
-          <source
-            srcset="assets/product-desktop.jpg"
-            media="(min-width: 62rem)"
-          />
-          <img
-            src="assets/product-mobile.jpg"
-            id="product-image"
-            alt="A perfume bottle image"
-          />
-        </picture>
-      </section>
-      <section class="flex f-column f-space-btw" id="detail-container">
-        <h2
-          class="montserrat weight-500 font-sm letter-spacing color-aurometal"
-        >
-          PERFUME
-        </h2>
-        <h2 class="fraunces weight-700 font-lg line-h-32 color-gunmetal">
-          Gabrielle Essence Eau De Parfum
-        </h2>
-        <p class="montserrat weight-500 font-md line-h-23 color-aurometal">
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        <div
-          class="fraunces weight-700 font-lg line-h-32 color-aquamarine"
-          id="discount-price"
-        >
-          <span class="visually-hidden">Discounted Price: </span>$149.99
-          <sup
-            class="montserrat weight-500 font-sm line-h-23 color-aurometal"
-            id="original-price"
-            ><span class="visually-hidden">Original Price: </span
-            ><s>$169.99</s></sup
-          >
+      <article class="grid" id="product-card">
+        <div id="image-container">
+          <picture>
+            <source
+              srcset="assets/product-desktop.jpg"
+              media="(min-width: 62rem)"
+            />
+            <img
+              src="assets/product-mobile.jpg"
+              id="product-image"
+              alt="Gabrielle Essence perfume bottle lying flat on a table with leaves decoration"
+            />
+          </picture>
         </div>
-        <button
-          class="montserrat weight-700 font-md color-white flex f-row f-center"
-          id="button"
-          type="button"
+        <div
+          class="flex f-col f-space-btw bg-white ff-body"
+          id="detail-container"
         >
-          <img
-            src="assets/icon-cart.svg"
-            id="cart-icon"
-            alt=""
-            aria-hidden="true"
-          />
-          Add to Cart
-        </button>
-      </section>
+          <h2 class="fw-500 fs-sm lt-spacing aurometal">PERFUME</h2>
+          <h2 class="ff-highlight fw-700 fs-lg lh-md gunmetal">
+            Gabrielle Essence Eau De Parfum
+          </h2>
+          <p class="fw-500 fs-md lh-sm aurometal">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div
+            class="ff-highlight fw-700 fs-lg lh-md aquamarine"
+            id="current-price"
+          >
+            <span class="sr-only">Current Price: </span>$149.99
+            <sup
+              class="ff-body fw-500 fs-sm lh-sm aurometal"
+              id="original-price"
+              ><span class="sr-only">Original Price: </span><s>$169.99</s></sup
+            >
+          </div>
+          <button
+            class="flex f-row f-center place-items-center fw-700 fs-md white bg-aquamarine hover-bg-aquamarine round-sm"
+            id="button"
+            type="button"
+          >
+            <img
+              src="assets/icon-cart.svg"
+              id="cart-icon"
+              alt=""
+              aria-hidden="true"
+            />
+            Add to Cart
+          </button>
+        </div>
+      </article>
     </main>
     <footer>
       <a href="https://github.com/Nimus-oes" target="_blank">©Nimus-oes</a>
