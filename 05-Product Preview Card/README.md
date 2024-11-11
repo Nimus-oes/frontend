@@ -42,22 +42,27 @@
 #### Misunderstanding
 
 A common misconception in accessibility is that using `rem` units alone makes elements scalable to the screen sizes and therefore accessible. However, `rem` only adapts to the default font size settings of the browser - it does not inherently adjust to screen size unless you specify to do so with media queries.
+<br>
 
 #### Responsiveness ≠ Accessibility
 
 There are many requirements to making website accessible for people with different needs, ranging from screen reading to keyboard navigation. While creating a responsive website that adapts its layout to different device sizes can help improve accessibility, it’s only one part of the process and not enough on its own. [As Jim Byrne stated](https://jimbyrne.co.uk/what-is-responsive-website-design-and-how-does-it-relate-to-accessibility/), a responsive website responds to screen size and an accessible website responds to a users’ access needs.
+<br>
 
 #### Browser Default Font Sizes Vary
 
 For accessibility, it’s essential to consider that users may increase their browser’s default font size for better readability. Accessible designs maintain a solid layout that doesn't break even when the font size is scaled up significantly.
+<br>
 
 #### Why Use `rem` Instead of `px` for Accessibility
 
 The `rem` unit is based on the root font size, so if users increase the default font size, elements sized in `rem` will adjust accordingly. In contrast, `px` remains fixed, regardless of user settings. `rem` is generally better for font sizes and layout elements that need to be flexible to match user preferences.
+<br>
 
 #### `rem` Isn't One-Size-Fits-All Solution
 
 There are cases where `px` can still be useful, such as for borders or padding where scaling with font size isn’t necessary. It’s worth considering whether each element should grow with font size increases. Testing these choices by adjusting the browser font size helps in deciding when to use `rem` vs. `px`.
+<br>
 
 #### Design Choices for This Project
 
