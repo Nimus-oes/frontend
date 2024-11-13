@@ -149,8 +149,7 @@
 }
 
 /* General Style*/
-img,
-source {
+img {
   display: block;
 }
 
