@@ -103,11 +103,11 @@ In short, using `<img>` with `<srcset>` may be overkill for a simple mobile-to-d
 
 #### How to Use `<picture>` the Right Way
 
-#### Why the Image Gets Pushed Out of the Container
+_Why the Image Gets Pushed Out of the Container_
 
 With `<picture>`, you should define the width and height of the images on `<img>` element, not on `<source>`. The `<source>` element is only meant to contain different image sources for various screens. The actual size control should be applied to the `<img>` element. If you set physical width and height values on the `<source>` element, it will occupy space on the screen, thus pushing down the actual `<img>` element.
 
-#### Why the Image Doesn't Fit into the Cotainer
+_Why the Image Doesn't Fit into the Cotainer_
 
 Even if the `source` element doesn't have width and height values, the image might still not properly fit in its container, creating blank space on the left and bottom edges. This is often because the image isn't set as a block element. Applying `display: block` can resolve this issue.
 <br><br>
