@@ -14,6 +14,21 @@
 <p></p>
 <br>
 
+## Table of Contents
+
+- [Key Features](#key-features)
+- [Development Process](#development-process)
+- [What I learned](#what-i-learned)
+  - [Accessibility from the Perspective of Browser Default Font Size](#accessibility-from-the-perspective-of-browser-default-font-size)
+  - [Responsive Images](#responsive-images)
+  - [How to Implement Strikethrough Text with Accessibilty in Mind](#how-to-implement-strikethrough-text-with-accessibilty-in-mind)
+- [Improvement Logs](#improvement-logs)
+- [Continued Development](#continued-development)
+- [Annotations (Resources)](<#annotations-(resources)>)
+- [Acknowledgments](#acknowledgments)
+
+<br>
+
 ## Key Features
 
 - Responsive layout switching from a single column on mobile to a two-column layout on desktop using CSS grid
@@ -77,7 +92,7 @@ There are cases where `px` can still be useful, such as for borders or padding w
 
 <br>
 
-### 2. Responsive Image and `<picture>`
+### 2. Responsive Images
 
 #### Why Use HTML for Responsive Images
 
