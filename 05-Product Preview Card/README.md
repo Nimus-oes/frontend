@@ -156,9 +156,9 @@ Here’s the common code to make an element visually hidden but accessible to sc
 
 ## Annotations (Resources)
 
-1. [What is responsive website design and how does it relate to accessibility (Jim Byrne)](https://jimbyrne.co.uk/what-is-responsive-website-design-and-how-does-it-relate-to-accessibility/)
-2. [The Surprising Truth About Pixels and Accessibility (Josh Comeau)](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
-3. [Strikethrough Accessibility (Web Axe)](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
+1. [What is responsive website design and how does it relate to accessibility](https://jimbyrne.co.uk/what-is-responsive-website-design-and-how-does-it-relate-to-accessibility/) by Jim Byrne
+2. [The Surprising Truth About Pixels and Accessibility](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/) by Josh Comeau
+3. [Strikethrough Accessibility](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/) by Web Axe
 
 <br>
 
