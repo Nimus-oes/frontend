@@ -9,6 +9,8 @@
 </p>
 <p align="center">A product preview card built with HTML and CSS</p>
 
+<p align="center"><a href="https://nimus-oes.github.io/frontend/05-Product%20Preview%20Card/">Live Site Link 🔗</a></p>
+
 <p></p>
 <br>
 
@@ -125,8 +127,6 @@ As Dennis Lembree’s research on accessibility</a> showed<sup>4</sup>, the most
 
 Using `display: none` hides an element not just visually, but also removes it from the accessibility tree, making it inaccessible to screen readers. For screen readers to recognize an element, it needs to occupy some space, even if it’s minimal. To make an element hidden visually but still available to assistive technology, you can create a tiny element with a size of `1px` by `1px` and restrict its visibility using `clip` or absolute positioning.
 
-Here’s the common code to make an element visually hidden but accessible to screen readers:
-
 ```
 .sr-only {
   position: absolute;
@@ -150,7 +150,8 @@ Here’s the common code to make an element visually hidden but accessible to sc
 
 ## Continued Development
 
--
+- Lazy loading for images is not currently necessary since all elements need to load simultaneously. However, it might be beneficial to implement it in future projects.
+- Using `<svg>` and `<path>` offers much better control over vector icons compared to `<img>`. Learning how to work with these elements will be a focus moving forward.
 
 <br>
 
