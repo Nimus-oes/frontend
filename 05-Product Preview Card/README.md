@@ -46,7 +46,7 @@ One misconception I had in accessibility is that using `rem` units alone makes e
 
 #### Responsiveness ≠ Accessibility
 
-There are many requirements to making website accessible for people with different needs, ranging from screen reading to keyboard navigation. While creating a responsive website that adapts its layout to different device sizes can help improve accessibility, it’s only one part of the process and not enough on its own. <a href="https://jimbyrne.co.uk/what-is-responsive-website-design-and-how-does-it-relate-to-accessibility/" target="_blank">As Jim Byrne stated</a><sup>1</sup>, a responsive website responds to screen size and an accessible website responds to a users’ access needs.
+There are many requirements to making website accessible for people with different needs, ranging from screen reading to keyboard navigation. While creating a responsive website that adapts its layout to different device sizes can help improve accessibility, it’s only one part of the process and not enough on its own. As Jim Byrne stated<sup>1</sup>, a responsive website responds to screen size and an accessible website responds to a users’ access needs.
 <br><br>
 
 #### Browser Default Font Sizes Vary
@@ -61,7 +61,7 @@ The `rem` unit is based on the root font size, so if users increase the default 
 
 #### `rem` Isn't One-Size-Fits-All Solution
 
-There are cases where `px` can still be useful, such as for borders or padding where scaling with font size isn’t necessary. It’s worth considering whether each element should grow with font size increases. Testing these choices by adjusting the browser font size helps in deciding when to use `rem` vs. `px`.
+There are cases where `px` can still be useful, such as for borders or padding where scaling with font size isn’t necessary. It’s worth considering whether the value should scale up as the user increases their browser's default font size. Testing these choices by adjusting the browser font size helps in deciding when to use `rem` vs. `px`.<sup>2</sup>
 <br><br>
 
 #### Design Choices for This Project
@@ -118,7 +118,7 @@ Even if the `source` element doesn't have width and height values, the image mig
 
 While the `<s>` element is a semantic HTML tag used to indicate that content is no longer accurate or relevant, it has a major problem that most screen readers do not recognize it. This can be a serious issue for visually impaired users, especially since strikethrough text is often used in modern e-commerce to show the original price before a discount.
 
-As <a href="https://www.webaxe.org/strikethrough-html-accessibility/" target="_blank">Dennis Lembree’s research on accessibility</a> showed, the most appropriate solution that applies to all screen readers might be adding informative text next to the price and visually hide it.
+As Dennis Lembree’s research on accessibility</a> showed<sup>3</sup>, the most appropriate solution that applies to all screen readers might be adding informative text next to the price and visually hide it.
 <br><br>
 
 #### Why `display: none` Doesn't Work for Screen Reader-Only Text
@@ -154,7 +154,11 @@ Here’s the common code to make an element visually hidden but accessible to sc
 
 <br>
 
-## Useful Resources
+## Annotations (Resources)
+
+1. [What is responsive website design and how does it relate to accessibility (Jim Byrne)](https://jimbyrne.co.uk/what-is-responsive-website-design-and-how-does-it-relate-to-accessibility/)
+2. [The Surprising Truth About Pixels and Accessibility (Josh Comeau)](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
+3. [Strikethrough Accessibility (Web Axe)](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
 
 <br>
 
