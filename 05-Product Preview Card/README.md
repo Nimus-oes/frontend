@@ -9,7 +9,7 @@
 </p>
 <p align="center">A product preview card built with HTML and CSS</p>
 
-<p align="center"><a href="https://nimus-oes.github.io/frontend/05-Product%20Preview%20Card/">Live Site Link 🔗</a></p>
+<p align="center"><a href="https://nimus-oes.github.io/frontend/05-Product%20Preview%20Card/">Live Site Link</a> 🔗</p>
 
 <p></p>
 <br>
