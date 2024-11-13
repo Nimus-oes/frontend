@@ -79,7 +79,7 @@ There are cases where `px` can still be useful, such as for borders or padding w
 
 #### Why Use HTML for Responsive Images
 
-Responsive images should be implemented with `<picture>` or `<img>` HTML element, rather than relying solely on CSS or JavaScript. It is because browsers begin downloading images as soon as they find them in the HTML before CSS and JavaScript are loaded. By the time CSS and JavaScript runs to switch image sources, the original image has often already been downloaded, which can lead to downloading multiple versions of the same image, wasting bandwidth and slowing page load times.
+Responsive images should be implemented with `<picture>` or `<img>` HTML element, rather than relying solely on CSS or JavaScript. It is because browsers begin downloading images as soon as they find them in the HTML before CSS and JavaScript are loaded. By the time CSS and JavaScript runs to switch image sources, the original image has often already been downloaded, which can lead to downloading multiple versions of the same image, wasting bandwidth and slowing page load times.<sup>3</sup>
 <br><br>
 
 #### Two Challenges with Responsive Images
@@ -118,7 +118,7 @@ Even if the `source` element doesn't have width and height values, the image mig
 
 While the `<s>` element is a semantic HTML tag used to indicate that content is no longer accurate or relevant, it has a major problem that most screen readers do not recognize it. This can be a serious issue for visually impaired users, especially since strikethrough text is often used in modern e-commerce to show the original price before a discount.
 
-As Dennis Lembree’s research on accessibility</a> showed<sup>3</sup>, the most appropriate solution that applies to all screen readers might be adding informative text next to the price and visually hide it.
+As Dennis Lembree’s research on accessibility</a> showed<sup>4</sup>, the most appropriate solution that applies to all screen readers is to add informative text next to the price and visually hide it.
 <br><br>
 
 #### Why `display: none` Doesn't Work for Screen Reader-Only Text
@@ -158,7 +158,8 @@ Here’s the common code to make an element visually hidden but accessible to sc
 
 1. [What is responsive website design and how does it relate to accessibility](https://jimbyrne.co.uk/what-is-responsive-website-design-and-how-does-it-relate-to-accessibility/) by Jim Byrne
 2. [The Surprising Truth About Pixels and Accessibility](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/) by Josh Comeau
-3. [Strikethrough Accessibility](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/) by Web Axe
+3. [Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) by MDN
+4. [Strikethrough Accessibility](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/) by Web Axe
 
 <br>
 
