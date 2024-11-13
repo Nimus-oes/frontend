@@ -19,7 +19,7 @@
 - [Key Features](#key-features)
 - [Development Process](#development-process)
 - [What I learned](#what-i-learned)
-  - [Accessibility from the Perspective of Browser Default Font Size](#accessibility-from-the-perspective-of-browser-default-font-size)
+  - [Accessibility from the Perspective of Browser Default Font Size](#what-i-learned/accessibility-from-the-perspective-of-browser-default-font-size)
   - [Responsive Images](#responsive-images)
   - [How to Implement Strikethrough Text with Accessibilty in Mind](#how-to-implement-strikethrough-text-with-accessibilty-in-mind)
 - [Improvement Logs](#improvement-logs)
