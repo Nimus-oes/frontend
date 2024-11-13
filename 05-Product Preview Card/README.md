@@ -19,12 +19,12 @@
 - [Key Features](#key-features)
 - [Development Process](#development-process)
 - [What I learned](#what-i-learned)
-  - [Accessibility from the Perspective of Browser Default Font Size](#what-i-learned/accessibility-from-the-perspective-of-browser-default-font-size)
-  - [Responsive Images](#responsive-images)
-  - [How to Implement Strikethrough Text with Accessibilty in Mind](#how-to-implement-strikethrough-text-with-accessibilty-in-mind)
+  - [1. Accessibility from the Perspective of Browser Default Font Size](#1-accessibility-from-the-perspective-of-browser-default-font-size)
+  - [2. Responsive Images](#2-responsive-images)
+  - [3. How to Implement Strikethrough Text with Accessibilty in Mind](#3-how-to-implement-strikethrough-text-with-accessibilty-in-mind)
 - [Improvement Logs](#improvement-logs)
 - [Continued Development](#continued-development)
-- [Annotations (Resources)](<#annotations-(resources)>)
+- [Annotations (Resources)](#annotations-resources)
 - [Acknowledgments](#acknowledgments)
 
 <br>
