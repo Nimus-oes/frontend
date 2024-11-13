@@ -46,7 +46,7 @@ One misconception I had in accessibility is that using `rem` units alone makes e
 
 #### Responsiveness ≠ Accessibility
 
-There are many requirements to making website accessible for people with different needs, ranging from screen reading to keyboard navigation. While creating a responsive website that adapts its layout to different device sizes can help improve accessibility, it’s only one part of the process and not enough on its own. <a href="https://jimbyrne.co.uk/what-is-responsive-website-design-and-how-does-it-relate-to-accessibility/" target="_blank">As Jim Byrne stated</a>, a responsive website responds to screen size and an accessible website responds to a users’ access needs.
+There are many requirements to making website accessible for people with different needs, ranging from screen reading to keyboard navigation. While creating a responsive website that adapts its layout to different device sizes can help improve accessibility, it’s only one part of the process and not enough on its own. <a href="https://jimbyrne.co.uk/what-is-responsive-website-design-and-how-does-it-relate-to-accessibility/" target="_blank">As Jim Byrne stated</a><sup>1</sup>, a responsive website responds to screen size and an accessible website responds to a users’ access needs.
 <br><br>
 
 #### Browser Default Font Sizes Vary
@@ -155,8 +155,6 @@ Here’s the common code to make an element visually hidden but accessible to sc
 <br>
 
 ## Useful Resources
-
--
 
 <br>
 
