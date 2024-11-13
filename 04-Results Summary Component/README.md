@@ -193,15 +193,15 @@ As the category items are dependent on their container’s context and do not ha
 
 ## Useful Resources
 
-- [Decorative Images (W3C)](https://www.w3.org/WAI/tutorials/images/decorative/) - Guidance on types of decorative images that do not add additional information, and how to handle them in HTML
-- [How to Change the CSS Background Opacity (Sentry)](https://sentry.io/answers/how-to-change-the-css-background-opacity-of-an-element/) - Techniques for adjusting background opacity in CSS while preserving child element styles
+- <a href="https://www.w3.org/WAI/tutorials/images/decorative/" target="_blank">Decorative Images (W3C)</a> - Guidance on types of decorative images that do not add additional information, and how to handle them in HTML
+- <a href="https://sentry.io/answers/how-to-change-the-css-background-opacity-of-an-element/" target="_blank">How to Change the CSS Background Opacity (Sentry)</a> - Techniques for adjusting background opacity in CSS while preserving child element styles
 
-- [Organizing your CSS (MDN)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing) - Tips on organizing CSS code, covering methodologies like OOCSS, BEM, and the use of pre/post-processors.
+- <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing" target="_blank">Organizing your CSS (MDN)</a> - Tips on organizing CSS code, covering methodologies like OOCSS, BEM, and the use of pre/post-processors.
 
-- [5 Tips To Make Google Fonts Faster (Request Metrics)](https://requestmetrics.com/web-performance/5-tips-to-make-google-fonts-faster/) - Tips for optimizing Google Fonts to improve loading speed and performance.
+- <a href="https://requestmetrics.com/web-performance/5-tips-to-make-google-fonts-faster/" target="_blank">5 Tips To Make Google Fonts Faster (Request Metrics)</a> - Tips for optimizing Google Fonts to improve loading speed and performance.
 
 <br>
 
 ## Acknowledgments
 
-This project is inspired by [the challenge from Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV).
+This project is inspired by <a href="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV" target="_blank">the challenge from Frontend Mentor</a>.

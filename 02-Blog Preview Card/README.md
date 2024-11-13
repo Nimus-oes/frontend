@@ -44,4 +44,4 @@ Resizing large images with CSS to fit small elements (like profile pictures) is 
 
 ## Acknowledgments
 
-This project is based on a challenge from <a href="https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS">Frontend Mentor</a>
+This project is based on a challenge from <a href="https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS" target="_blank">Frontend Mentor</a>

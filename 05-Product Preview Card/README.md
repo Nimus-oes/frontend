@@ -46,7 +46,7 @@ One misconception I had in accessibility is that using `rem` units alone makes e
 
 #### Responsiveness ≠ Accessibility
 
-There are many requirements to making website accessible for people with different needs, ranging from screen reading to keyboard navigation. While creating a responsive website that adapts its layout to different device sizes can help improve accessibility, it’s only one part of the process and not enough on its own. [As Jim Byrne stated](https://jimbyrne.co.uk/what-is-responsive-website-design-and-how-does-it-relate-to-accessibility/), a responsive website responds to screen size and an accessible website responds to a users’ access needs.
+There are many requirements to making website accessible for people with different needs, ranging from screen reading to keyboard navigation. While creating a responsive website that adapts its layout to different device sizes can help improve accessibility, it’s only one part of the process and not enough on its own. <a href="https://jimbyrne.co.uk/what-is-responsive-website-design-and-how-does-it-relate-to-accessibility/" target="_blank">As Jim Byrne stated</a>, a responsive website responds to screen size and an accessible website responds to a users’ access needs.
 <br><br>
 
 #### Browser Default Font Sizes Vary
@@ -67,7 +67,7 @@ There are cases where `px` can still be useful, such as for borders or padding w
 #### Design Choices for This Project
 
 - `rem`
-  - Main containers (#image-container and #detail-container) - should expand if text size increases
+  - Main containers (`#image-container` and `#detail-container`) - should expand if text size increases
   - Media queries - to ensure the layout adjusts to available screen space, considering font size rather than just physical screen dimensions
   - Line heights - prevents text overlap at larger font sizes
 - `px`
@@ -84,11 +84,11 @@ Responsive images should be implemented with `<picture>` or `<img>` HTML element
 
 #### Two Challenges with Responsive Images
 
-Implement responsive images in HTML depends on the specific challenge you need to solve:
+Implementing responsive images in HTML depends on the specific challenge you need to solve:
 
 - **Art Direction Problem**: This focuses on displaying the key parts of an image on various screen sizes. It often involves using images that are cropped or zoomed to highlight the essential parts, rather than just compressing the original. The `<picture>` element is typically used to address this issue.
 
-- **Resolution Switching Problem**: This deals with displaying different image resolutions based on display density, viewport size, or other conditions. The `<img>` element is often for this issue, along with `srcset` to switch between resolutions.
+- **Resolution Switching Problem**: This deals with displaying different image resolutions based on display density, viewport size, or other conditions. The `<img>` element is often used for this issue, along with `srcset` to switch between resolutions.
   <br><br>
 
 #### `<picture>` vs. `<img>` for Art Direction Switching
@@ -105,11 +105,11 @@ In short, using `<img>` with `<srcset>` may be overkill for a simple mobile-to-d
 
 #### Why the Image Gets Pushed Out of the Container
 
-With `<picture>`, you should define the width and height of the images on `<img>` element, not on `<source>`. The `<source>` element is only meant to contain different image sources for various screens. The actual size control should be applied to the `<img>` element. If you set physical element, it will occupy space on the screen, thus pushing down the actual `<img>` element.
+With `<picture>`, you should define the width and height of the images on `<img>` element, not on `<source>`. The `<source>` element is only meant to contain different image sources for various screens. The actual size control should be applied to the `<img>` element. If you set physical width and height values on the `<source>` element, it will occupy space on the screen, thus pushing down the actual `<img>` element.
 
 #### Why the Image Doesn't Fit into the Cotainer
 
-Even if the `source` element doesn't have width and hegith values, the image might still not properly fit in its container, creating blank space on the left and bottom edges. This is often because the image isn't set as a block element. Applying `display: block` can resolve this issue.
+Even if the `source` element doesn't have width and height values, the image might still not properly fit in its container, creating blank space on the left and bottom edges. This is often because the image isn't set as a block element. Applying `display: block` can resolve this issue.
 <br><br>
 
 ### 3. How to Implement Strikethrough Text with Accessibilty in Mind
@@ -118,7 +118,7 @@ Even if the `source` element doesn't have width and hegith values, the image mig
 
 While the `<s>` element is a semantic HTML tag used to indicate that content is no longer accurate or relevant, it has a major problem that most screen readers do not recognize it. This can be a serious issue for visually impaired users, especially since strikethrough text is often used in modern e-commerce to show the original price before a discount.
 
-As Dennis Lembree’s research on accessibility showed, the most appropriate solution that applies to all screen readers might be adding informative text next to the price and visually hide it.
+As <a href="https://www.webaxe.org/strikethrough-html-accessibility/" target="_blank">Dennis Lembree’s research on accessibility</a> showed, the most appropriate solution that applies to all screen readers might be adding informative text next to the price and visually hide it.
 <br><br>
 
 #### Why `display: none` Doesn't Work for Screen Reader-Only Text
@@ -162,4 +162,4 @@ Here’s the common code to make an element visually hidden but accessible to sc
 
 ## Acknowledgments
 
-This project is inspired by [the challenge from Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
+This project is inspired by <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa" target="_blank">the challenge from Frontend Mentor</a>.
