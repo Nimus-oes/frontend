@@ -41,33 +41,28 @@
 
 #### Misunderstanding
 
-A common misconception in accessibility is that using `rem` units alone makes elements scalable to the screen sizes and therefore accessible. However, `rem` only adapts to the default font size settings of the browser - it does not inherently adjust to screen size unless you specify to do so with media queries.
-
-<br>
+One misconception I had in accessibility is that using `rem` units alone makes elements scalable to the screen sizes and therefore accessible. However, `rem` only adapts to the default font size settings of the browser - it does not inherently adjust to screen size unless you specify to do so with media queries.
+<br><br>
 
 #### Responsiveness ≠ Accessibility
 
 There are many requirements to making website accessible for people with different needs, ranging from screen reading to keyboard navigation. While creating a responsive website that adapts its layout to different device sizes can help improve accessibility, it’s only one part of the process and not enough on its own. [As Jim Byrne stated](https://jimbyrne.co.uk/what-is-responsive-website-design-and-how-does-it-relate-to-accessibility/), a responsive website responds to screen size and an accessible website responds to a users’ access needs.
-
-<br>
+<br><br>
 
 #### Browser Default Font Sizes Vary
 
 For accessibility, it’s essential to consider that users may increase their browser’s default font size for better readability. Accessible designs maintain a solid layout that doesn't break even when the font size is scaled up significantly.
-
-<br>
+<br><br>
 
 #### Why Use `rem` Instead of `px` for Accessibility
 
 The `rem` unit is based on the root font size, so if users increase the default font size, elements sized in `rem` will adjust accordingly. In contrast, `px` remains fixed, regardless of user settings. `rem` is generally better for font sizes and layout elements that need to be flexible to match user preferences.
-
-<br>
+<br><br>
 
 #### `rem` Isn't One-Size-Fits-All Solution
 
 There are cases where `px` can still be useful, such as for borders or padding where scaling with font size isn’t necessary. It’s worth considering whether each element should grow with font size increases. Testing these choices by adjusting the browser font size helps in deciding when to use `rem` vs. `px`.
-
-<br>
+<br><br>
 
 #### Design Choices for This Project
 
@@ -76,35 +71,80 @@ There are cases where `px` can still be useful, such as for borders or padding w
   - Media queries - to ensure the layout adjusts to available screen space, considering font size rather than just physical screen dimensions
   - Line heights - prevents text overlap at larger font sizes
 - `px`
-  - Padding - does not need to scale with font size, especially on smaller screens where space is limited due to the increased font sizes
+  - Padding - does not need to scale with font size, especially on smaller screens where space is limited due to the increased font size
 
 <br>
 
-### 2. `<img>` vs `<picture>` for Responsive Image
+### 2. Responsive Image and `<picture>`
 
-<br>
+#### Why Use HTML for Responsive Images
 
-### 3. How to implement strikethrough text with accessibilty in mind
+Responsive images should be implemented with `<picture>` or `<img>` HTML element, rather than relying solely on CSS or JavaScript. It is because browsers begin downloading images as soon as they find them in the HTML before CSS and JavaScript are loaded. By the time CSS and JavaScript runs to switch image sources, the original image has often already been downloaded, which can lead to downloading multiple versions of the same image, wasting bandwidth and slowing page load times.
+<br><br>
 
-<br>
+#### Two Challenges with Responsive Images
 
-### 4. Combination of Grid and Flexbox
+Implement responsive images in HTML depends on the specific challenge you need to solve:
 
-<br>
+- **Art Direction Problem**: This focuses on displaying the key parts of an image on various screen sizes. It often involves using images that are cropped or zoomed to highlight the essential parts, rather than just compressing the original. The `<picture>` element is typically used to address this issue.
 
-### 5. The Adoption of Utility First CSS
+- **Resolution Switching Problem**: This deals with displaying different image resolutions based on display density, viewport size, or other conditions. The `<img>` element is often for this issue, along with `srcset` to switch between resolutions.
+  <br><br>
 
-<br>
+#### `<picture>` vs. `<img>` for Art Direction Switching
 
-### 6. How to check the radius value in pixel in Figma
+While both `<picture>` and `<img>` can seem to achieve same results, each has dinstinct advantages depending on your needs. In this project, `<picture>` was used for art direction switching for the following reasons:
+
+- With `<img>`, you need to set a slot width for each image source, which can make conditions complicated when you only need to switch between mobile and desktop versions. With `<picture>`, you can simply define media queries for this.
+- When `<img>` is used with `srcset` and slot width, browsers select the optimal image resolution based on multiple factors, which doesn’t always yield consistent or predictable results due to the complexity of the decision-making process.
+
+In short, using `<img>` with `<srcset>` may be overkill for a simple mobile-to-desktop image switch.
+<br><br>
+
+#### How to Use `<picture>` the Right Way
+
+#### Why the Image Gets Pushed Out of the Container
+
+With `<picture>`, you should define the width and height of the images on `<img>` element, not on `<source>`. The `<source>` element is only meant to contain different image sources for various screens. The actual size control should be applied to the `<img>` element. If you set physical element, it will occupy space on the screen, thus pushing down the actual `<img>` element.
+
+#### Why the Image Doesn't Fit into the Cotainer
+
+Even if the `source` element doesn't have width and hegith values, the image might still not properly fit in its container, creating blank space on the left and bottom edges. This is often because the image isn't set as a block element. Applying `display: block` can resolve this issue.
+<br><br>
+
+### 3. How to Implement Strikethrough Text with Accessibilty in Mind
+
+#### Most Screen Readers Don't Support `<s>`
+
+While the `<s>` element is a semantic HTML tag used to indicate that content is no longer accurate or relevant, it has a major problem that most screen readers do not recognize it. This can be a serious issue for visually impaired users, especially since strikethrough text is often used in modern e-commerce to show the original price before a discount.
+
+As Dennis Lembree’s research on accessibility showed, the most appropriate solution that applies to all screen readers might be adding informative text next to the price and visually hide it.
+<br><br>
+
+#### Why `display: none` Doesn't Work for Screen Reader-Only Text
+
+Using `display: none` hides an element not just visually, but also removes it from the accessibility tree, making it inaccessible to screen readers. For screen readers to recognize an element, it needs to occupy some space, even if it’s minimal. To make an element hidden visually but still available to assistive technology, you can create a tiny element with a size of `1px` by `1px` and restrict its visibility using `clip` or absolute positioning.
+
+Here’s the common code to make an element visually hidden but accessible to screen readers:
+
+```
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+```
 
 <br>
 
 ## Improvement Logs
 
-- Removed the redundant declaration of CSS variables for font families by defining them directly with utility classes
-- Changed the flexbox layout for the main container to grid system for a simpler control
-- Changed two `<section>` containers for a product card with an `<article>` element
+- Simplified font-family declarations by using utility classes instead of redundant CSS variables.
+- Switched the main container layout from Flexbox to a Grid system for easier control.
+- Replaced two `<section>` containers in the product card with a single `<article>` element.
 
 <br>
 
