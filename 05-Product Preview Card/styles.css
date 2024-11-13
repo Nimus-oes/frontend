@@ -180,7 +180,6 @@ footer a {
 /* Product image container and image element */
 #image-container {
   max-height: var(--240px);
-  display: grid;
 }
 
 #product-image {
