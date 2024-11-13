@@ -216,6 +216,7 @@ footer a {
     width: var(--600px);
     height: var(--450px);
     grid-template-columns: 1fr 1fr;
+    margin-top: unset;
   }
 
   #image-container {
