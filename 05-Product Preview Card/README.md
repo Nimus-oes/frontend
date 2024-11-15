@@ -136,7 +136,12 @@ Even if the `source` element doesn't have width and height values, the image mig
 While the `<s>` element is a semantic HTML tag used to indicate that content is no longer accurate or relevant, it has a major problem that most screen readers do not recognize it. This can be a serious issue for visually impaired users, especially since strikethrough text is often used in modern e-commerce to show the original price before a discount.
 
 As Dennis Lembree’s research on accessibility</a> showed<sup>4</sup>, the most appropriate solution that applies to all screen readers is to add informative text next to the price and visually hide it.
-<br><br>
+
+```
+<span class="sr-only">Original Price:</span><s>$169.99</s>
+```
+
+<br>
 
 #### Why `display: none` Doesn't Work for Screen Reader-Only Text
 
